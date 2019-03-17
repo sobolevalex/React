@@ -11,14 +11,14 @@ import NewsList from './components/news_list'
 class App extends Component {
     
     state = {
-        news:JSON
+        news:JSON 
     }
 
     render (){
         return (
             <div>
                 <Header/>
-                <NewsList news={this.state.news} donkey="Me"/>
+                <NewsList news={this.state.news}/>
             </div>
         )
     }
