@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-class Life extends Component {
+class Life extends PureComponent {
     // 1 get default props
 
     //2 set default state 
@@ -8,36 +8,36 @@ class Life extends Component {
         title:'Life cycle'
     }
     
-    componentWillMount(){
-        console.log('before render');
+    // componentWillMount(){
+    //     console.log('before render');
         
-    }
+    // }
 
-    componentWillUpdate(){
-        console.log('Before update');
+    // componentWillUpdate(){
+    //     console.log('Before update');
         
-    }
+    // }
 
-    componentDidUpdate(){
-        console.log('After update' );
+    // componentDidUpdate(){
+    //     console.log('After update' );
         
-    }
+    // }
 
-    componentWillReceiveProps(){
-        console.log('Before receive props'); 
+    // componentWillReceiveProps(){
+    //     console.log('Before receive props'); 
         
-    }
+    // }
 
-    componentWillUnmount(){
-        console.log('Wil unmount!!!');
+    // componentWillUnmount(){
+    //     console.log('Wil unmount!!!');
         
-    }
+    // }
 
-    shouldComponentUpdate(nextProps, nextState){
-        console.log(nextState);
-        return true;
+    // shouldComponentUpdate(nextProps, nextState){
+    //     console.log(nextState);
+    //     return true;
 
-    }
+    // }
 
     render(){
         console.log(this.props);
